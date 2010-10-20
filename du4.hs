@@ -3,6 +3,10 @@ import IO
 import List    
 import Graphics.HGL
 
+{--
+Code by Jiří Daněk - Thank you for your permission and this code
+--}
+
 -- ukolem je matice 4x4
 rozmer = 4
 
