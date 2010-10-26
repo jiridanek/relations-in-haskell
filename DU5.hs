@@ -43,15 +43,6 @@ ref_sym_trans = filter fce ref_sym
 
 uplny_vysledek = filter fce ref_sym_trans
   where
-    fce m = ( ((sloupec 1) . (radek 2)) m == False ) && ( ((sloupec 1) . (radek 3)) m == False ) && ( ((sloupec 2) . (radek 1)) m == False ) && ( ((sloupec 3) . (radek 1)) m == False )
-    
-    
-    
-    
-mat' = filter fce uplny_vysledek
-  where
-    -- to prokazdy je muj pokus o cyklus foreach na všechny prvky v matici ;-)
-    fce m = reflexivni m && prokazdy rozmer (tranzitivni rozmer) m
-    
-    
+    fce m = ( ((sloupec 1) . (radek 2)) m == False ) && ( ((sloupec 1) . (radek 3)) m == False ) && ( ((sloupec 2) . (radek 3)) m == False )    
+  
     
